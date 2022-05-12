@@ -9,7 +9,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    color: aliceblue;
+    color: #f0f8ff;
     font-size: 1.6rem;
 }
 
@@ -128,12 +128,18 @@ label>span {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid #FFD973;
     background: #FFD973;
+    border: 2px solid #FFD973;
     transition: .5s;
 }
 
+
 label:hover>span {
-    border-color: aliceblue;
-    background: aliceblue;
+    background: #f0f8ff;
+    border-color: #f0f8ff;
+}
+
+label:active>span {
+    background: #c2e3ff;
+    border-color: #c2e3ff;
 }

@@ -92,6 +92,7 @@ input[type="radio"] {
 
 .description {
     width: 25%;
+    line-height: 100%;
 }
 
 #slide-1:checked ~ .description-container .descriptions {
@@ -127,12 +128,12 @@ label>span {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid #4885ff;
-    background: #4885ff;
+    border: 2px solid #FFD973;
+    background: #FFD973;
     transition: .5s;
 }
 
 label:hover>span {
-    border-color: #e6eeff;
-    background: #e6eeff;
+    border-color: aliceblue;
+    background: aliceblue;
 }

@@ -4,35 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>cssMemeSlider</title>
 </head>
 <body>
     <div class="slider">
-        <div class="slides">
-            <input id="slide-1" name="slider-radio" type="radio">
-            <input id="slide-2" name="slider-radio" type="radio">
-            <input id="slide-3" name="slider-radio" type="radio">
-            <input id="slide-4" name="slider-radio" type="radio">
+        <input id="slide-1" name="slider-radio" type="radio" checked>
+        <input id="slide-2" name="slider-radio" type="radio">
+        <input id="slide-3" name="slider-radio" type="radio">
+        <input id="slide-4" name="slider-radio" type="radio">
 
+        <div class="slides">    
             <div class="slide"><img src="./assets/img/slide-1.jpg" alt="slide-1"></div>
             <div class="slide"><img src="./assets/img/slide-2.jpg" alt="slide-2"></div>
             <div class="slide"><img src="./assets/img/slide-3.jpg" alt="slide-3"></div>
             <div class="slide"><img src="./assets/img/slide-4.jpg" alt="slide-4"></div>
         </div>
 
-        <div class="descriptions">
-            <div class="description">Time is power, comrads.</div>
-            <div class="description">My brain every time I get a slight headache.</div>
-            <div class="description">User-friendly hotkey.</div>
-            <div class="description">People who use semicolons in JavaScript.</div>
-        </div>
+        <div class="description-container">
+            
+            <div class="overflow-container">
+                <div class="descriptions">
+                    <div class="description d1">Time is power, comrads.</div>
+                    <div class="description">My brain every time I get a slight headache.</div>
+                    <div class="description">User-friendly hotkey.</div>
+                    <div class="description">People who use semicolons in JavaScript.</div>
+                </div>
+            </div>
+        
+            <div class="navigation">
+                <label for="slide-1"><span></span></label>
+                <label for="slide-2"><span></span></label>
+                <label for="slide-3"><span></span></label>
+                <label for="slide-4"><span></span></label>
+            </div>
 
-        <div class="navigation">
-            <label for="slide-1"><span></span></label>
-            <label for="slide-2"><span></span></label>
-            <label for="slide-3"><span></span></label>
-            <label for="slide-4"><span></span></label>
         </div>
     </div>
 </body>

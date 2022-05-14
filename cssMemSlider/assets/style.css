@@ -14,15 +14,12 @@ html {
 }
 
 .slider {
-    position: absolute;
-    width: 840px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 5vh auto 0;
+    width: 55vw;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 2rem;
     background-color: #414b87;
-    border: 20px solid #414b87;
+    border: 2rem solid #414b87;
 }
 
 input[type="radio"] {
@@ -33,13 +30,13 @@ input[type="radio"] {
 .slides {
     width: 400%;
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 2.5rem;
     transition: .5s;
 }
 
 .slide {
     width: 25%;
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +71,7 @@ input[type="radio"] {
 }
 
 .overflow-container {
-    width: 400px;
+    width: 50%;
     overflow: hidden;
 }
 
@@ -92,7 +89,6 @@ input[type="radio"] {
 
 .description {
     width: 25%;
-    line-height: 100%;
 }
 
 #slide-1:checked ~ .description-container .descriptions {
@@ -116,8 +112,8 @@ input[type="radio"] {
 }
 
 label {
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -129,7 +125,7 @@ label>span {
     height: 15px;
     border-radius: 50%;
     background: #FFD973;
-    border: 2px solid #FFD973;
+    border: .2rem solid #FFD973;
     transition: .5s;
 }
 
@@ -142,4 +138,42 @@ label:hover>span {
 label:active>span {
     background: #c2e3ff;
     border-color: #c2e3ff;
+}
+
+@media (max-width: 890px) {
+    .slider {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        border-width: 1.5rem;
+        width: 80vw;
+    }
+
+    .description-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+
+    .overflow-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        font-size: 1.2rem;
+    }
+
+    .slider {
+        border-width: 1rem;
+        width: 90vw;
+    }
 }

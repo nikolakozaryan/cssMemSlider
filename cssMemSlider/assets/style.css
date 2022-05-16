@@ -27,8 +27,7 @@ body {
 }
 
 input[type="radio"] {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 .slides {
